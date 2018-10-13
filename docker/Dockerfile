@@ -1,4 +1,4 @@
-FROM home/ruby:latest
+FROM home/ruby:2.5
 
 USER root
 
