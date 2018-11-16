@@ -1,4 +1,4 @@
-FROM home/ruby:2.5
+FROM ubuntu/ruby:2.5
 
 USER root
 
