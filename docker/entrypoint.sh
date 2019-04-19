@@ -21,11 +21,10 @@ if [ ! -f $init_lock/initialize ]; then
     cd /opt/$APPLICATION/current
     git pull && git checkout $BRANCH
     bundle install
-
 fi
 
 if [ $# -eq 0 ]; then
-  /bin/bash
+    rails s -b 0.0.0.0
 else
   exec "$@"
 fi
